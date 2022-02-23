@@ -1,0 +1,62 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    margin-left: 20px;
+    font-family: 'Major Mono Display', monospace;
+}
+
+header{
+    display: flex;
+    background-color: #f5853f;
+    justify-content: space-between;
+    border: none;
+    height: 70px;
+}
+
+nav{
+    width: 30%;
+    display: flex;
+    justify-content: center
+}
+
+a{
+    color: black;
+    border: #b95110 solid 1px;
+    font-family: 'Staatliches', cursive;
+    background-color: #ffcdbc;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #b95110
+}
+
+@media(max-width:700px){
+    header{
+        width: 100%;
+        height: 80px;
+    }
+    
+    h1{
+        display:none
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+h1:hover{
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover{
+    background-color: rgb(83, 33, 13);
+    color:white;
+}
