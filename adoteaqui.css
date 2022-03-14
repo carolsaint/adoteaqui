@@ -1,6 +1,8 @@
 body{
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    height: 100vh;
 }
 
 h1{
@@ -10,10 +12,40 @@ h1{
 
 header{
     display: flex;
-    background-color: #f5853f;
-    justify-content: space-between;
+    background-color: #bfd9d7;
     border: none;
-    height: 70px;
+    height: 100px;
+    align-items: center;
+}
+
+.logo-top-container{
+    width: 30%;
+    display: flex;
+    margin-left: 20px;
+}
+
+.links-header-container{
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo-top{
+    width: 350px;
+    height: 80px ;
+}
+
+.logo-bottom{
+    width: 350px;
+    height: 80px ;
+}
+
+.second-head{
+    background-color: #e6ecf3;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
 }
 
 nav{
@@ -22,18 +54,153 @@ nav{
     justify-content: center
 }
 
-a{
+.links-header{
     color: black;
-    border: #b95110 solid 1px;
+    border: #ae9152 solid 1px;
     font-family: 'Staatliches', cursive;
-    background-color: #ffcdbc;
-    margin: auto;
+    background-color: #ddbb4d;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px #b95110
+    box-shadow: 3px 3px 3px #ad9d7a;
+    margin-right: 5px;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ae9152;
+    height: 900px;
+}
+
+.first-block{
+    display: flex;
+    flex-direction: row;
+    background-color: #ae9152;
+    width: 100%;
+    height: 600px;
+    justify-content: space-around;
+
+}
+
+.main-img{
+    align-self: center;
+    display: flex;
+    width: 800px;
+    height: 520px;
+    margin-left: 5px;
+}
+
+.main-text{
+    margin: 10px;
+    border: 3px solid black;
+    width: 45%;
+    height: auto;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    align-items: center;
+}
+
+.main-p{
+    padding: 3px;
+    font-size: 20px;
+}
+
+
+.second-block{
+    display: flex;
+    flex-direction: row;
+    background-color: #b7e4e1;
+    width: 100%;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comment{
+    border: 2px solid black;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+h4{
+    padding: 1px;
+    margin: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.profile{
+    width: 30%;
+    height: 50%;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.rodape-container{
+    width: 100%;
+    display: flex;
+    background-color: #bfd9d7;
+    height: 120px;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    background-color: #bfd9d7;
+    width: 25%;
+    height: 120px;
+}
+
+.logo-bottom-container{
+    width: 25%;
+    display: flex;
+    margin-left: 15px;
+}
+
+.rodape-links{
+    display: flex;
+    flex-direction: row;
+    background-color: #bfd9d7;
+    height: 120px;
+    width: 74%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links-container{
+    display: flex;
+    width: 15%;
+    margin-right: 20px;
+}
+
+.links{
+    display: flex;
+    width: 50px;
+    margin-right: 4px;
+}
+
+.social-links{
+    height: 50px;
+}
+
+
+
+
+
+/*Media query*/
 @media(max-width:700px){
+    
+    body{
+        height: 100vh;
+        width: 90%;
+    }
+
     header{
         width: 100%;
         height: 80px;
@@ -43,10 +210,100 @@ a{
         display:none
     }
 
+    header{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-head{
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .second-nav{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    } 
+
+    .logo-top-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .links-header-container{
+        margin-right: 0px;
+        justify-content: flex-start;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 1250px;
+    }
+
+    .first-block{
+        justify-content: flex-start;
+        height: 700px;
+    }
+    .main-img{
+        height: 250px;
+        width: 98%;
+    }
+
+    .second-head{
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .second-block{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .comment{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 150px
+    }
+
+    .main-text{
+        width: 90%;
+        height: 700px;
+    }
+
     .buttons{
         display: flex;
         flex-direction: column;
         margin: auto;
+    }
+
+    .first-block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape-container{
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .rodape-links{
+        width: 40%;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
 
@@ -56,7 +313,7 @@ h1:hover{
     justify-content: center;
 }
 
-a:hover{
-    background-color: rgb(83, 33, 13);
+.links-header:hover{
+    background-color: #353745;
     color:white;
 }
