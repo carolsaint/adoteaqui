@@ -86,7 +86,7 @@ nav{
 .main-img{
     align-self: center;
     display: flex;
-    width: 800px;
+    width: 600px;
     height: 520px;
     margin-left: 5px;
 }
@@ -148,6 +148,7 @@ h4{
     background-color: #bfd9d7;
     height: 120px;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .logo{
@@ -168,7 +169,7 @@ h4{
     flex-direction: row;
     background-color: #bfd9d7;
     height: 120px;
-    width: 74%;
+    width: 400px;
     justify-content: flex-end;
     align-items: center;
 }
